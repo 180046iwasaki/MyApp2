@@ -1,7 +1,6 @@
 package jp.te4a.spring.boot.myapp2;
 
-import static org.junit.Assert.assertTrue;
-
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 /**
@@ -15,6 +14,9 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+        HelloControll2 he = new HelloControll2();
+        String expect = he.index();
+        String actual = "Taro desu!";
+        assertEquals(expect,actual);
     }
 }
